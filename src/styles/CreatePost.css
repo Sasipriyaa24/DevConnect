@@ -1,0 +1,62 @@
+.create-post-page {
+  padding: var(--space-xl) 0 calc(var(--space-xl) * 2);
+}
+
+.create-post-card {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.create-post-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.form-group-row {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+.input-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 10px 14px;
+}
+
+.textarea-body {
+  min-height: 180px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.char-counter {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-align: right;
+  margin-top: 4px;
+}
+
+.char-counter.is-near-limit {
+  color: #d29922; /* Warning yellow */
+}
+
+.char-counter.is-over-limit {
+  color: var(--danger);
+}
+
+.create-post-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--border-default);
+}
