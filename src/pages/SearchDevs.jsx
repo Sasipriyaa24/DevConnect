@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { getToken } from '../lib/getToken'
 import '../styles/SearchDevs.css'
 
-const API_URL = 'http://localhost:5000'
+const API_URL = 'https://devconnect-n0to.onrender.com/'
 
 /**
  * SearchDevs Page — Developer Directory with real-time search.

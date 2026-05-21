@@ -5,8 +5,7 @@ import { getToken } from '../lib/getToken'
 import '../styles/Feed.css'
 
 const FILTERS = ['All', 'Following', 'Trending']
-const API_URL = 'http://localhost:5000'
-
+const API_URL = 'https://devconnect-n0to.onrender.com/'
 /**
  * Feed Page — Displays all posts with filtering, search, and sorting.
  * 

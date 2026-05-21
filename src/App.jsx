@@ -13,7 +13,7 @@ import ProtectedRoute from './components/ProtectedRoute.jsx'
 import { useAuth } from './context/AuthContext.jsx'
 import { getToken } from './lib/getToken'
 
-const API_URL = 'http://localhost:5000'
+const API_URL = 'https://devconnect-n0to.onrender.com/'
 
 function App() {
   const { user, updateUser } = useAuth()

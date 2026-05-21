@@ -12,7 +12,7 @@ function Login() {
   const { loginWithCustomBackend, loginWithGoogle } = useAuth()
   const navigate = useNavigate()
 
-  const API_URL = 'http://localhost:5000'
+  const API_URL = 'https://devconnect-n0to.onrender.com/'
 
   const handleSubmit = async (e) => {
     e.preventDefault()

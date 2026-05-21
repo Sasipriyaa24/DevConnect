@@ -38,7 +38,7 @@ function CreatePost({ user, onAddPost }) {
   const isOverLimit = body.length > MAX_LENGTH
   const isValid = title.trim() && body.trim() && !isOverLimit
 
-  const API_URL = 'http://localhost:5000'
+  const API_URL = 'https://devconnect-n0to.onrender.com/'
 
   const handleSubmit = async (e) => {
     e.preventDefault()
