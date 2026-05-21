@@ -12,8 +12,7 @@ import SearchDevs from './pages/SearchDevs.jsx'
 import ProtectedRoute from './components/ProtectedRoute.jsx'
 import { useAuth } from './context/AuthContext.jsx'
 import { getToken } from './lib/getToken'
-
-const API_URL = 'https://devconnect-n0to.onrender.com/'
+import { API_URL } from './lib/apiUrl'
 
 function App() {
   const { user, updateUser } = useAuth()

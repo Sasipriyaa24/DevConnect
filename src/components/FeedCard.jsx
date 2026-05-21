@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { getToken } from '../lib/getToken'
+import { API_URL } from '../lib/apiUrl'
 
 /**
  * Single post card for the developer feed.
@@ -19,8 +20,6 @@ function FeedCard({
   const [loadingComments, setLoadingComments] = useState(false)
   const [isBookmarked, setIsBookmarked] = useState(false)
   const [isDeleting, setIsDeleting] = useState(false)
-
-  const API_URL = 'http://localhost:5000'
 
   // Compute display values — gracefully handles both mock data and backend data
   const displayAuthor = author || 'Anonymous'

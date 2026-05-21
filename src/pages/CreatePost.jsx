@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { getToken } from '../lib/getToken'
+import { API_URL } from '../lib/apiUrl'
 import '../styles/CreatePost.css'
 
 /**
@@ -37,8 +38,6 @@ function CreatePost({ user, onAddPost }) {
   const isNearLimit = body.length > MAX_LENGTH * 0.9
   const isOverLimit = body.length > MAX_LENGTH
   const isValid = title.trim() && body.trim() && !isOverLimit
-
-  const API_URL = 'https://devconnect-n0to.onrender.com/'
 
   const handleSubmit = async (e) => {
     e.preventDefault()

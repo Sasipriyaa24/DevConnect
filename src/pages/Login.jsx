@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
+import { API_URL } from '../lib/apiUrl'
 import '../styles/Auth.css'
 
 function Login() {
@@ -11,8 +12,6 @@ function Login() {
   
   const { loginWithCustomBackend, loginWithGoogle } = useAuth()
   const navigate = useNavigate()
-
-  const API_URL = 'https://devconnect-n0to.onrender.com/'
 
   const handleSubmit = async (e) => {
     e.preventDefault()

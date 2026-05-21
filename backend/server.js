@@ -29,6 +29,15 @@ app.use("/likes", likeRoutes);
 app.use("/auth", authRoutes);
 app.use("/bookmarks", bookmarkRoutes);
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
+});
+
+server.on('error', (error) => {
+  if (error.code === 'EADDRINUSE') {
+    console.error(`Port ${PORT} is already in use. Try stopping the process using that port or set a different PORT in .env.`);
+    process.exit(1);
+  }
+  console.error('Server error:', error);
+  process.exit(1);
 });

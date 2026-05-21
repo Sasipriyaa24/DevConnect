@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import FeedCard from '../components/FeedCard.jsx'
 import { getToken } from '../lib/getToken'
+import { API_URL } from '../lib/apiUrl'
 import '../styles/Feed.css'
 
 const FILTERS = ['All', 'Following', 'Trending']
-const API_URL = 'https://devconnect-n0to.onrender.com/'
 /**
  * Feed Page — Displays all posts with filtering, search, and sorting.
  * 
